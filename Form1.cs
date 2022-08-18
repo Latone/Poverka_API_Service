@@ -132,9 +132,10 @@ namespace Poverka_API_Service
                     serviceController.WaitForStatus(ServiceControllerStatus.Running);
                     getServiceStatus();
                 }
-                catch
+                catch(Exception ex)
                 {
-                    // ...
+                    MessageBox.Show("Невозможно перезапустить службу с новыми настройкам, запустите программу от имени Администратора", "Исключение",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             Properties.Settings.Default.pathToSave = label3.Text;

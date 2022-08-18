@@ -107,6 +107,7 @@ namespace Poverka_API_Service
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Poverka Service API";
             this.ResumeLayout(false);
             this.PerformLayout();
